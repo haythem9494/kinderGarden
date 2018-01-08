@@ -1,0 +1,43 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+    <div class="list-group">
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;{{ 'Dashboard' | translate }}
+        </a>
+        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-th-list"></i>&nbsp;{{ 'Component' | translate }}
+        </a>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('pages')">
+                <span><i class="fa fa-plus"></i>&nbsp; {{ 'Parent' | translate }}</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'pages'">
+                <ul class="submenu">
+                    <li>
+                        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']"><span>{{ 'Ajouter parent' | translate }}</span></a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']"><span>{{ 'liste des parent' | translate }}</span></a>
+                    </li>
+
+                </ul>
+            </li>
+        </div>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('pages')">
+                <span><i class="fa fa-plus"></i>&nbsp; {{ 'Enfant' | translate }}</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'pages'">
+                <ul class="submenu">
+                    <li>
+                        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']"><span>{{ 'Ajouter enfant' | translate }}</span></a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']"><span>{{ 'liste des enfant' | translate }}</span></a>
+                    </li>
+
+                </ul>
+            </li>
+        </div>
+
+    </div>
+</nav>
