@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FormChildComponent } from './form-child.component';
+import { CreateParentComponent } from './create-parent.component';
 
 const routes: Routes = [
     {
-        path: 'FormChild', component: FormChildComponent
+        path: '', component: CreateParentComponent
     }
 ];
 

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TablesComponent } from './tables.component';
+import { ReadChildComponent } from './read-child.component';
 
 const routes: Routes = [
     {
-        path: '', component: TablesComponent
+        path: '', component: ReadChildComponent
     }
 ];
 

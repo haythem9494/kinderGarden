@@ -13,10 +13,10 @@
             <li class="nested" [class.expand]="showMenu === 'pages'">
                 <ul class="submenu">
                     <li>
-                        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']"><span>{{ 'Ajouter parent' | translate }}</span></a>
+                        <a [routerLink]="['/create-parent']" [routerLinkActive]="['router-link-active']"><span>{{ 'Ajouter parent' | translate }}</span></a>
                     </li>
                     <li>
-                        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']"><span>{{ 'liste des parent' | translate }}</span></a>
+                        <a [routerLink]="['/read-parent']" [routerLinkActive]="['router-link-active']"><span>{{ 'liste des parent' | translate }}</span></a>
                     </li>
 
                 </ul>
@@ -29,10 +29,10 @@
             <li class="nested" [class.expand]="showMenu === 'pages'">
                 <ul class="submenu">
                     <li>
-                        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']"><span>{{ 'Ajouter enfant' | translate }}</span></a>
+                        <a [routerLink]="['/create-child']" [routerLinkActive]="['router-link-active']"><span>{{ 'Ajouter enfant' | translate }}</span></a>
                     </li>
                     <li>
-                        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']"><span>{{ 'liste des enfant' | translate }}</span></a>
+                        <a [routerLink]="['/read-child']" [routerLinkActive]="['router-link-active']"><span>{{ 'liste des enfant' | translate }}</span></a>
                     </li>
 
                 </ul>

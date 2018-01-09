@@ -1,0 +1,54 @@
+<div [@routerTransition]>
+
+    <div class="row">
+
+        <div class="col col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header">liste des parent</div>
+                <div class="card-body table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>nom</th>
+                                <th>prenom</th>
+                                <th>email</th>
+                                <th>age</th>
+                                <th>action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>haythem </td>
+                                <td>bekir</td>
+                                <td>haythem.bekir@gmail.com</td>
+                                <td>34</td>
+                                <td>
+                                    <!-- read one parent button -->
+                                    <a [routerLink]="['/read-one-parent']" [routerLinkActive]="['router-link-active']" class='btn btn-primary m-r-5px'>
+                                        <span class='glyphicon glyphicon-eye-open'></span> Read
+                                    </a>
+
+                                    <!-- edit parent button -->
+                                    <a class='btn btn-info m-r-5px'>
+                                        <span class='glyphicon glyphicon-edit'></span> Edit
+                                    </a>
+
+                                    <!-- delete parent button -->
+                                    <a class='btn btn-danger m-r-5px'>
+                                        <span class='glyphicon glyphicon-remove'></span> Delete
+                                    </a>
+                                    <a class='btn btn-primary m-r-5px'>
+                                        <span class='glyphicon glyphicon-plus'></span> Ajouter enfent
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

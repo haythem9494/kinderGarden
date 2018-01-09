@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
 
 @Component({
-    selector: 'app-form-child',
-    templateUrl: './form-child.component.html',
-    styleUrls: ['./form-child.component.scss'],
+    selector: 'app-tables',
+    templateUrl: './read-child.component.html',
+    styleUrls: ['./read-child.component.scss'],
     animations: [routerTransition()]
 })
-export class FormChildComponent implements OnInit {
+export class ReadChildComponent implements OnInit {
     constructor() {}
 
     ngOnInit() {}

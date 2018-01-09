@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { TablesRoutingModule } from './tables-routing.module';
-import { TablesComponent } from './tables.component';
+import { TablesRoutingModule } from './read-child-routing.module';
+import { ReadChildComponent } from './read-child.component';
 import { PageHeaderModule } from './../../shared';
 
 @NgModule({
     imports: [CommonModule, TablesRoutingModule, PageHeaderModule],
-    declarations: [TablesComponent]
+    declarations: [ReadChildComponent]
 })
-export class TablesModule {}
+export class ReadChildModule {}
